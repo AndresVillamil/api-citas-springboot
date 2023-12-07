@@ -28,7 +28,7 @@ public class Doctor {
     private Especialidad especialidad;
 
     @OneToMany(mappedBy = "doctor")
-    private Set<Cita> citas;
+    private Set<Cita> citas = new HashSet<Cita>();
 
     public enum Especialidad{medicina_interna, medinica_general}
 

@@ -1,7 +1,7 @@
 package com.citas.apicitas.entities;
 
 import java.time.LocalDateTime;
-import java.util.Set;
+import java.util.*;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -31,5 +31,5 @@ public class Paciente {
     private LocalDateTime fechaNacimiento;
 
     @OneToMany(mappedBy="paciente")
-    private Set<Cita> citas;
+    private Set<Cita> citas = new HashSet<Cita>(); ;
 }

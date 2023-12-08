@@ -17,8 +17,8 @@ Ejercicio para aprendizaje creación API REST con SpringBoot, MySql, para realiz
 **1. Clone este repositorio ejecutando el siguiente comando: -**
 
 ```bash
- git clone "git+https://github.com/AndresVillamil/api-centro-medico-taller.git"
- cd api-centro-medico-taller
+ git clone "https://github.com/AndresVillamil/api-citas-springboot.git"
+ cd api-citas-springboot
 ```
 
 **2. ** **🎉 Abrir postman and probar el API en esta url `https://127.0.0.1:8081`**

@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/api/pacientes")
 public class PacienteController {
-   @Autowired
+  @Autowired
   private PacienteService pacienteService;
 
   @GetMapping("")

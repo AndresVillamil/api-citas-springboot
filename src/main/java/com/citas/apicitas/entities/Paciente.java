@@ -3,6 +3,8 @@ package com.citas.apicitas.entities;
 import java.time.LocalDateTime;
 import java.util.*;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -30,6 +32,7 @@ public class Paciente {
     @Column(name="fecha_nacimiento")
     private LocalDateTime fechaNacimiento;
 
+    @JsonIgnore
     @OneToMany(mappedBy="paciente")
     private Set<Cita> citas = new HashSet<Cita>(); ;
 }

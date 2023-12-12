@@ -55,16 +55,16 @@ Adicionalmente este proyecto utiliza:
 - `Gestión de Doctores`: Permite la creación, búsqueda, modificación y eliminación de doctores.
 ***
 -  Crear un Doctor
-![CrearDoctores](./Pruebas%20API/Doctores/CrearDoctores(POST).png)
+![CrearDoctores](./Pruebas-api/Doctores/CrearDoctor.png)
 
 -  Obtener Listado de Doctores
-![Obtener Doctores](./Pruebas%20API/Doctores/ObtenerDoctores(GET).png)
+![Obtener Doctores](./Pruebas-api/Doctores/ObteneerDoctores.png)
 
 -  Modificar un Doctor por ID
-![Modificar Doctor](./Pruebas%20API/Doctores/Modificar%20y%20Consultar%20un%20doctor%20por%20ID.png)
+![Modificar Doctor](./Pruebas-api/Doctores/ModificarUnDoctor.png)
 
 -  Eliminar un Doctor
-![Eliminar Doctor](./Pruebas%20API/Doctores/Eliminar%20un%20doctor.png)
+![Eliminar Doctor](./Pruebas-api/Doctores/EliminarDoctor.png)
 
 
 

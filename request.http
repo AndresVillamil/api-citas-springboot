@@ -47,8 +47,18 @@ Content-Type: application/json
 
 
 
+
+
 ###
-DELETE http://localhost:8081/api/pacientes/0 HTTP/1.1
+DELETE http://localhost:8081/api/pacientes/609 HTTP/1.1
+
+
+
+
+
+
+
+
 
 
 DOCTORES
@@ -56,9 +66,11 @@ DOCTORES
 //Doctores
 
 ###
-GET http://localhost:8000/api/doctores HTTP/1.1
+GET http://localhost:8081/api/doctores HTTP/1.1
 
 
+###
+GET http://localhost:8081/api/doctores/especialidad/medicina_general HTTP/1.1
 
 
 
@@ -83,9 +95,9 @@ POST http://localhost:8081/api/doctores HTTP/1.1
 Content-Type: application/json
 
 {   
-  "id_profesional": "803",
-  "nombre": "Arturo",
-  "apellido": "Mendez",
+  "idProfesional": 939,
+  "nombre": "Juan",
+  "apellido": "Perez",
   "correo":"arturo@mail.com",
   "especialidad": "medicina_general"
 }
@@ -99,21 +111,19 @@ Content-Type: application/json
 
 
 ###
-GET http://localhost:8000/api/doctores/80345678 HTTP/1.1
+GET http://localhost:8081/api/doctores/503 HTTP/1.1
 
 ###
-PUT http://localhost:8000/api/doctores/80345678 HTTP/1.1
+PUT http://localhost:8081/api/doctores/503 HTTP/1.1
 Content-Type: application/json
 
 {
-    "id_profesional": 80345678,
-    "nombre": "Arturo Pepito",
-    "apellido": "Mendez",
-    "correo": "arturo@mail.com",
-    "telefono": "2234567",
-    "especialidad": "medicina_interna"
-  }
-
+  "idProfesional": 503,
+  "nombre": "Arturo",
+  "apellido": "Perez",
+  "correo": "arturo@mail.com",
+  "especialidad": "medicina_interna"
+}
 
 
 
@@ -123,7 +133,7 @@ Content-Type: application/json
 
 
 ###
-DELETE http://localhost:8000/api/doctores/80345678 HTTP/1.1
+DELETE http://localhost:8081/api/doctores/703 HTTP/1.1
 
 
 

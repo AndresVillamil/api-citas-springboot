@@ -11,7 +11,8 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/api/doctores")
 public class DoctorController {
-     @Autowired
+  
+  @Autowired
   private DoctorService doctorService;
 
   @GetMapping("")

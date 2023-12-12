@@ -1,7 +1,10 @@
 package com.citas.apicitas.entities;
 import jakarta.persistence.*;
 import lombok.*;
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Data
 @AllArgsConstructor
@@ -15,7 +18,7 @@ public class Doctor {
     private long idProfesional;
 
     @Column
-    private String name;
+    private String nombre;
 
     @Column 
     private String apellido;
@@ -27,9 +30,9 @@ public class Doctor {
     @Column
     private Especialidad especialidad;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "doctor")
     private Set<Cita> citas = new HashSet<Cita>();
 
-    public enum Especialidad{medicina_interna, medicina_general}
-
+    public enum Especialidad{medicina_interna, medicina_general};
 }

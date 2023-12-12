@@ -152,7 +152,7 @@ DELETE http://localhost:8081/api/doctores/703 HTTP/1.1
 
 //Citas
 ###
-GET http://localhost:8000/api/citas HTTP/1.1
+GET http://localhost:8081/api/citas HTTP/1.1
 
 
 
@@ -174,13 +174,14 @@ GET http://localhost:8000/api/citas HTTP/1.1
 
 
 ###
-POST http://localhost:8000/api/citas HTTP/1.1
+POST http://localhost:8081/api/citas HTTP/1.1
 Content-Type: application/json
 
 {   
-  "fecha_hora": "2023-10-23T08:01:00.000Z",
-      "id_profesional": 71978654,
-      "id_numeroCedula": 79978654
+  
+      "idProfesional": 539,
+      "idNumeroCedula": 8090,
+      "fechaHora": "2023-12-09T12:00:00"
 }
 
 
@@ -195,17 +196,33 @@ Content-Type: application/json
 
 
 ###
-GET http://localhost:8000/api/citas/one-cita?profesional=71978654&paciente=79978654&fecha=2023-11-23T08:13:00.000Z HTTP/1.1
+GET http://localhost:8081/api/citas/one-cita?idPaciente=654&idDoctor=539&fecha_hora=2000-10-09T12:00:00 HTTP/1.1
 
 ###
-PUT http://localhost:8000/api/citas/?profesional=71978654&paciente=79978654&fecha=2023-10-23T08:01:00.000Z HTTP/1.1
+PUT http://localhost:8081/api/citas?idPaciente=654&idDoctor=539&fecha_hora=2000-10-09T12:00:00 HTTP/1.1
 Content-Type: application/json
 
 {
-    "fecha_hora": "2023-11-23T08:13:00.000Z",
-    "id_profesional": 71978654,
-    "id_numeroCedula": 79978654
+  "id": {
+    "idProfesional": 539,
+    "idNumeroCedula": 654,
+    "fechaHora": "2023-11-09T12:00:00"
+  },
+  "doctor": {
+    "idProfesional": 539,
+    "nombre": "Juan",
+    "apellido": "Perez",
+    "correo": "arturo@mail.com",
+    "especialidad": "medicina_general"
+  },
+  "paciente": {
+    "idNumeroCedula": 654,
+    "nombre": "Juana",
+    "apellido": "Juarez",
+    "telefono": "31145678",
+    "fechaNacimiento": "1987-10-09T12:00:00"
   }
+}
 
 
 
@@ -217,4 +234,4 @@ Content-Type: application/json
 
 
 ###
-DELETE http://localhost:8000/api/citas?profesional=71978654&paciente=79978654&fecha=2023-11-23T08:13:00.000Z HTTP/1.1
+DELETE http://localhost:8081/api/citas?idPaciente=654&idDoctor=539&fecha_hora=2000-10-09T12:00:00 HTTP/1.1

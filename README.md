@@ -71,16 +71,15 @@ Adicionalmente este proyecto utiliza:
 - `Gestión de Citas`: Permite la creación, búsqueda, modificación y eliminación de citas.
 ***
 -  Crear una Cita
-![CrearCita](./Pruebas%20API/Citas/CrearCitas(POST).png)
+![CrearCita](./Pruebas-api/Citas/CrearCitas.png)
 
 -  Obtener Listado de Citas
-![Obtener Citas](./Pruebas%20API/Citas/ObtenerCitas(GET).png)
+![Obtener Citas](./Pruebas-api/Citas/ObtenerCitas.png)
 
--  Modificar unq Cita por ID
-![Modificar Cita](./Pruebas%20API/Citas/Modificar%20y%20Consultar%20una%20cita%20por%20ID.png)
+-  Obtener una Cita por ID
+![Modificar Cita](./Pruebas-api/Citas/ObtenerUnaCita.png)
 
--  Eliminar unq Cita
-![Eliminar Cita](./Pruebas%20API/Citas/Eliminar%20una%20cita.png)
+
 
 
 ### Imagen de Modelo Entidad Relación - Centro Médico
